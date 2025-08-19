@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRUFAMANIA</title>
+  <link rel="stylesheet" href="estilos-generales HTML5.css" type="text/css" media="all">
+  <style>
+    /* Centrado total y responsive */
+    :root { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: inherit; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      min-height: 100svh;
+      display: grid;
+      place-items: center; /* centro horizontal y vertical */
+      padding: 0;
+    }
+
+    /* Haz que el contenedor use todo el ancho disponible */
+    .wrap { width: min(100%, 1000px); margin: 0 auto; }
+
+    /* Overrides para evitar límites del CSS externo */
+    #hero {
+      width: 100% !important;      /* ocupa todo el ancho del contenedor */
+      max-width: none !important;  /* SIN tope de 800px u otros */
+      height: auto !important;
+      display: block;
+    }
+
+    area:focus { outline: 2px dashed; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- OJO: usemap y name deben coincidir exactamente -->
+    <img id="hero"
+         src="images/trufamania.jpg"
+         alt="Trufamania"
+         usemap="#Map">
+  </main>
+
+  <map name="Map" id="Map">
+    <area shape="rect" coords="623,27,767,109" href="truffles-home.htm" alt="trufamania">
+    <area shape="rect" coords="124,131,654,470" href="inicio-trufas.htm" alt="trufamania">
+  </map>
+
+  <script>
+    /* Reescala las áreas del image map cuando cambie el tamaño de la imagen */
+    (function () {
+      const img = document.getElementById('hero');
+      const map = document.getElementById('Map');
+
+      function scaleAreas() {
+        if (!img.naturalWidth || !img.naturalHeight) return;
+        const ratio = img.clientWidth / img.naturalWidth; // puede ser > 1 si amplías en escritorio
+        map.querySelectorAll('area[coords]').forEach(area => {
+          if (!area.dataset.origCoords) area.dataset.origCoords = area.coords;
+          const orig = area.dataset.origCoords.split(',').map(Number);
+          const scaled = orig.map(n => Math.round(n * ratio));
+          area.coords = scaled.join(',');
+        });
+      }
+
+      function onReady() { scaleAreas(); }
+
+      if (img.complete) onReady();
+      img.addEventListener('load', onReady);
+      window.addEventListener('resize', scaleAreas);
+      window.addEventListener('orientationchange', () => setTimeout(scaleAreas, 50));
+    })();
+  </script>
+</body>
+</html>

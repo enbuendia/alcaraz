@@ -1,0 +1,32 @@
+[25-Nov-2024 18:23:04 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[26-Nov-2024 22:00:51 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[29-Nov-2024 04:20:41 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[02-Dec-2024 03:23:09 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[27-Mar-2025 07:56:45 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[27-Mar-2025 22:05:27 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[28-Mar-2025 17:26:29 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
+[07-Apr-2025 03:51:07 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "DOCUMENT_ROOT" in /home4/trufaman/public_html/500.php:12
+Stack trace:
+#0 {main}
+  thrown in /home4/trufaman/public_html/500.php on line 12
