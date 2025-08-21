@@ -13,7 +13,7 @@ body {text-align: center; background: url("images/fondo3.jpg") black; background
 #global {margin: 0 auto; width:1024px}
 #cabecera {background-color: white; height:108px; border: 1px solid #660000}
 #logotipo   {float: left; width:120px; padding-top: 20px; padding-left:5px; padding-right:8px;}
-#publicidad {float: left; width:884px; margin-top:5px}
+#cabanim {float: left; width:884px; margin-top:5px}
 #navegacion {width:1024px; background-color: #660000; height:30px; font-family: arial,verdana, Monserrat;  font-size: 15pt}
 #navegacion ul { margin-left: 50px }
 #navegacion a {color: white; text-decoration: none; display: block}
