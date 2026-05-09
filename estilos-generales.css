@@ -11,9 +11,7 @@ td {border-width:0px;border-style:solid;border-color:#666666;padding:5px 5px 5px
 br {clear: left}
 body {text-align: center; background: url("images/fondo3.jpg") black; background-attachment:fixed}
 #global {margin: 0 auto; width:1024px}
-#cabecera {background-color: white; height:108px; border: 1px solid #660000}
-#logotipo   {float: left; width:120px; padding-top: 20px; padding-left:5px; padding-right:8px;}
-#cabanim {float: left; width:884px; margin-top:5px}
+#cabecera {background-color: #660000; padding: 22px 16px; text-align: center; border: none;}
 #navegacion {width:1024px; background-color: #660000; height:30px; font-family: arial,verdana, Monserrat;  font-size: 15pt}
 #navegacion ul { margin-left: 50px }
 #navegacion a {color: white; text-decoration: none; display: block}
@@ -84,7 +82,8 @@ body {text-align: center; background: url("images/fondo3.jpg") black; background
 #idiomas {width: 118px ;margin:0px 0px 0px 10px;}
 #idiomas ul {margin-left: 0px; margin-top: 12px}
 #idiomas li {float: left; list-style:none; padding: 0px 5px 0px 5px}
-
+#cabecera-titulo {font-size: 2em; font-weight: bold; color: #ffffff; letter-spacing: 2px;}
+#cabecera-subtitulo {font-size: 0.8em; color: #ffcccc; letter-spacing: 3px; text-transform: uppercase; margin-top: 5px;}
 
 /* ================================================
    RESPONSIVE PARA MÓVIL
