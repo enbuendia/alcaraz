@@ -84,3 +84,52 @@ body {text-align: center; background: url("images/fondo3.jpg") black; background
 #idiomas {width: 118px ;margin:0px 0px 0px 10px;}
 #idiomas ul {margin-left: 0px; margin-top: 12px}
 #idiomas li {float: left; list-style:none; padding: 0px 5px 0px 5px}
+
+
+/* ================================================
+   RESPONSIVE PARA MÓVIL
+   ================================================ */
+@media (max-width: 768px) {
+  #global { width: 100%; }
+  #cabecera { height: auto; overflow: hidden; }
+  #logotipo { width: 80px; padding-top: 10px; }
+  #cabanim { width: calc(100% - 95px); }
+  #cabanim img { width: 100% !important; height: auto !important; }
+  #navegacion { width: 100%; height: auto; font-size: 11pt; overflow-x: auto; white-space: nowrap; }
+  #navegacion ul { margin-left: 5px; display: inline-block; }
+  #navegacion li { margin: 6px 10px 6px 5px; display: inline-block; float: none; }
+  #contenido { width: 100%; float: none; box-sizing: border-box; }
+  #columnaI { float: none; width: 100%; display: flex; flex-wrap: wrap; gap: 5px; padding: 5px; box-sizing: border-box; }
+  #genero, #NUEVAS, #menu { float: none; width: auto; flex: 1 1 auto; margin: 5px; min-width: 140px; }
+  #central, #centralA, #entero { float: none; width: 100% !important; margin: 5px 0; box-sizing: border-box; overflow: hidden; }
+  #central p, #centralA p, #entero p { padding: 0px 10px; text-indent: 10px; }
+  #entero p { padding: 0px 15px; }
+  img { max-width: 100% !important; width: auto !important; height: auto !important; }
+  #central img, #centralA img, #entero img, #contenido img { display: block !important; float: none !important; margin: 10px auto !important; }
+  #idiomas { width: 100%; text-align: center; margin: 5px auto; }
+  #idiomas li { float: none; display: inline-block; }
+  table { max-width: 100%; margin: 0 auto; }
+  #pie { width: 100%; box-sizing: border-box; }
+  #pie h5 { padding: 5px 10px; }
+}
+
+
+/* Corrección altura #genero en móvil */
+@media (max-width: 768px) {
+  #genero {
+    align-self: flex-start;
+  }
+}
+
+
+/* Forzar columnaI en una sola columna en móvil */
+@media (max-width: 768px) {
+  #columnaI {
+    flex-direction: column;
+  }
+  #genero, #NUEVAS, #menu {
+    width: 100% !important;
+    min-width: unset;
+    box-sizing: border-box;
+  }
+}
