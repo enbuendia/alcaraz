@@ -14,6 +14,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  hyphens: auto;
 }
 
 body {
@@ -381,9 +382,24 @@ td {
    IMÁGENES
    ================================================ */
 
+/*
+   En escritorio respetamos los tamaños puestos en el HTML,
+   por ejemplo height="300".
+   Por eso aquí NO ponemos height: auto.
+*/
+
 img {
   max-width: 100%;
-  height: auto;
+}
+
+/* Banderas, iconos y elementos pequeños: mantener tamaño natural */
+
+#idiomas img,
+#menu img,
+#genero img,
+#NUEVAS img,
+#navegacion img {
+  max-width: none;
 }
 
 /* ================================================
@@ -505,7 +521,10 @@ img {
   p {
     padding: 0 12px;
     text-indent: 10px;
-    text-align: left;
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+    color: #660000;
   }
 
   #entero p {
@@ -530,6 +549,11 @@ img {
   h4 {
     padding: 5px 10px 0 15px;
   }
+
+  /*
+     En móvil sí anulamos los height="300" del HTML
+     para que las imágenes no se salgan de la pantalla.
+  */
 
   img {
     max-width: 100% !important;
@@ -607,18 +631,15 @@ img {
     padding: 5px 6px;
   }
 
-  #central,
-  #centralA,
-  #entero {
-    font-size: 1.05em;
-  }
-
   #central p,
   #centralA p,
   #entero p,
   p {
     padding: 0 10px;
     text-indent: 8px;
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
   }
 
   h1 {
