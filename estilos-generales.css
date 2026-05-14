@@ -200,7 +200,8 @@ td {
 #central,
 #centralA {
   float: left;
-  width: 857px;
+  width: calc(100% - 165px);
+  max-width: 857px;
   margin: 10px;
   font-family: Helvetica, Arial, Verdana, sans-serif;
   line-height: 1.45;
