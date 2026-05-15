@@ -781,6 +781,15 @@ img {
 .tabla-autores {
   margin-top: 10px;
 }
+.pie-foto-inicio {
+  text-align: center !important;
+  text-indent: 0 !important;
+  font-size: 0.85em;
+  color: #660000;
+  padding: 5px 10px 0 10px !important;
+  margin-bottom: 12px;
+  font-style: italic;
+}
 
 /* Inicio divulgativo en móvil */
 
