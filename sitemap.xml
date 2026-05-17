@@ -150,11 +150,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://trufamania.com/Tuber%20davidlopezii.htm</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://trufamania.com/Tuber%20excavatum.htm</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
@@ -334,11 +329,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://trufamania.com/Terfezia%20morenoi.htm</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://trufamania.com/Terfezia%20pini.htm</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
@@ -402,11 +392,6 @@
   </url>
   <url>
     <loc>https://trufamania.com/Terfezia%20grisea%20English.htm</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://trufamania.com/Terfezia%20morenoi%20English.htm</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
