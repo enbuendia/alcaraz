@@ -455,21 +455,5 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Picoa en español -->
-  <url>
-    <loc>https://trufamania.com/Picoa%20juniperi.htm</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://trufamania.com/Picoa%20lefebvrei.htm</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://trufamania.com/Picoa%20melospora.htm</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
 
 </urlset>
