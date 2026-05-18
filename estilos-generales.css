@@ -941,3 +941,42 @@ img {
   line-height: 1.45;
 }
 
+/* Galerias de fotos en movil */
+@media screen and (max-width: 768px) {
+  table.galeria-fotos {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  table.galeria-fotos tbody,
+  table.galeria-fotos tr {
+    display: block;
+    width: 100%;
+  }
+
+  table.galeria-fotos td {
+    display: inline-block;
+    width: 33.333%;
+    box-sizing: border-box;
+    padding: 5px 3px 12px 3px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  table.galeria-fotos a {
+    display: block;
+    font-size: 9pt;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  table.galeria-fotos img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 4px auto;
+  }
+}
+
