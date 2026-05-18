@@ -1076,3 +1076,66 @@ img {
     background-color: rgba(255,255,255,0.12);
   }
 }
+
+/* Tabla de composicion nutricional de terfezias */
+.tabla-composicion {
+  max-width: 620px;
+  margin: 24px auto;
+  padding: 18px;
+  border: 2px solid #660000;
+  background-color: #FFE7BA;
+  color: #660000;
+  box-sizing: border-box;
+}
+
+.tabla-composicion h2 {
+  margin: 0 0 16px 0;
+  text-align: center;
+  font-size: 1.45em;
+  line-height: 1.25;
+}
+
+.tabla-composicion-datos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.tabla-composicion-datos th,
+.tabla-composicion-datos td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(102, 0, 0, 0.25);
+  text-align: left;
+}
+
+.tabla-composicion-datos th {
+  font-weight: bold;
+}
+
+.tabla-composicion-datos td:last-child,
+.tabla-composicion-datos th:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tabla-composicion-datos tr:last-child td {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 600px) {
+  .tabla-composicion {
+    margin: 18px auto;
+    padding: 12px;
+  }
+
+  .tabla-composicion h2 {
+    font-size: 1.15em;
+  }
+
+  .tabla-composicion-datos th,
+  .tabla-composicion-datos td {
+    padding: 6px 5px;
+    font-size: 0.95em;
+  }
+}
