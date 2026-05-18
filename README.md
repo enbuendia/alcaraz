@@ -1,1 +1,3 @@
-Es una web de trufas en español e ingles. De momento en pruebas
+# Trufamania
+
+Web divulgativa sobre trufas y hongos hipogeos, con contenidos en español e inglés.
