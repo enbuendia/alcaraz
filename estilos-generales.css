@@ -2267,6 +2267,10 @@ img {
     line-height: 1.3;
   }
 
+  .pagina-galeria-fotos .titulo-galeria-prefijo {
+    display: none;
+  }
+
   .pagina-ficha-especie h4 {
     margin: 20px 0 8px 0;
     padding: 8px 10px;
