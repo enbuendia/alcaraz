@@ -2296,6 +2296,18 @@ img {
     background: #2f5c48;
   }
 
+  .pagina-galeria-fotos .menu-toggle-label {
+    margin: 8px 0;
+    padding: 11px 12px;
+    background: #5d170e;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+
+  .pagina-galeria-fotos .menu-toggle:checked + .menu-toggle-label {
+    background: #2f5c48;
+  }
+
   .pagina-ficha-especie #menu {
     padding: 8px;
   }
@@ -2322,17 +2334,23 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
   }
 
   .pagina-galeria-fotos #menu li {
+    width: calc(50% - 4px);
+    box-sizing: border-box;
     border-bottom: 0;
   }
 
   .pagina-galeria-fotos #menu a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     padding: 8px 10px;
     background: #fffaf1;
     border: 1px solid rgba(93, 23, 14, 0.14);
+    text-align: center;
   }
 
   .pagina-ficha-especie #central > a {
