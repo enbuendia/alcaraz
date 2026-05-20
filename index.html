@@ -39,7 +39,7 @@
       box-shadow: 0 0 24px rgba(0, 0, 0, 0.55);
     }
 
-    .cabecera-portada {
+    #cabecera {
       background: #660000;
       color: #ffffff;
       text-align: center;
@@ -63,8 +63,8 @@
 
     
 
-    .portada-nav-toggle,
-    .portada-nav-toggle-label {
+    .nav-toggle,
+    .nav-toggle-label {
       display: none;
     }
 
@@ -254,7 +254,7 @@
         border-right: none;
       }
 
-      .cabecera-portada {
+      #cabecera {
         padding: 18px 10px 14px 10px;
       }
 
@@ -314,12 +314,12 @@
   
     /* Menu hamburguesa portada movil */
     @media screen and (max-width: 768px) {
-      .cabecera-portada {
+      #cabecera {
         position: relative;
         padding-right: 58px;
       }
 
-      .portada-nav-toggle {
+      .nav-toggle {
         display: block;
         position: absolute;
         left: -9999px;
@@ -328,7 +328,7 @@
         opacity: 0;
       }
 
-      .portada-nav-toggle-label {
+      .nav-toggle-label {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -342,7 +342,7 @@
         z-index: 100;
       }
 
-      .portada-nav-toggle-label span {
+      .nav-toggle-label span {
         display: block;
         width: 26px;
         height: 2px;
@@ -352,16 +352,16 @@
         transform-origin: center;
       }
 
-      .portada-nav-toggle:checked ~ .cabecera-portada .portada-nav-toggle-label span:nth-child(1) {
+      .nav-toggle:checked ~ #cabecera .nav-toggle-label span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
       }
 
-      .portada-nav-toggle:checked ~ .cabecera-portada .portada-nav-toggle-label span:nth-child(2) {
+      .nav-toggle:checked ~ #cabecera .nav-toggle-label span:nth-child(2) {
         opacity: 0;
         transform: scaleX(0);
       }
 
-      .portada-nav-toggle:checked ~ .cabecera-portada .portada-nav-toggle-label span:nth-child(3) {
+      .nav-toggle:checked ~ #cabecera .nav-toggle-label span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
       }
 
@@ -369,7 +369,7 @@
         display: none !important;
       }
 
-      .portada-nav-toggle:checked ~ .menu-portada {
+      .nav-toggle:checked ~ .menu-portada {
         display: flex !important;
         flex-direction: column;
       }
@@ -395,15 +395,15 @@
   <main class="portada">
     <div class="tarjeta-portada">
 
-      <input type="checkbox" id="portada-nav-toggle" class="portada-nav-toggle">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
-      <header class="cabecera-portada">
-        <h1>TRUFAMANIA</h1>
-        <p>Pasión por la trufa</p>
-        <label for="portada-nav-toggle" class="portada-nav-toggle-label">
+      <div id="cabecera">
+        <div id="cabecera-titulo">TRUFAMANIA</div>
+        <div id="cabecera-subtitulo">Pasi&oacute;n por la trufa</div>
+        <label for="nav-toggle" class="nav-toggle-label">
           <span></span><span></span><span></span>
         </label>
-      </header>
+      </div>
       <nav class="menu-portada">
         <a href="inicio-trufas.htm">Inicio</a>
         <a href="las-trufas.htm">Las trufas</a>
@@ -444,8 +444,6 @@
 
         <div class="botones">
           <a href="inicio-trufas.htm">Entrar en Trufamania</a>
-          <a href="las-trufas.htm" class="secundario">Conocer las trufas</a>
-          <a href="truffles-home.htm" class="secundario">English version</a>
         </div>
 
         <div class="bloques">
