@@ -3658,3 +3658,17 @@ img {
     overflow-wrap: normal !important;
   }
 }
+/* Evitar partición de palabras en la portada móvil */
+@media screen and (max-width: 768px) {
+  .pagina-portada .contenido-portada,
+  .pagina-portada .contenido-portada p,
+  .pagina-portada .entradilla,
+  .pagina-portada .aviso,
+  .pagina-portada .bloque p {
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
