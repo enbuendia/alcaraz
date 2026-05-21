@@ -3624,3 +3624,37 @@ img {
     line-height: 1.58;
   }
 }
+
+/* Evitar partición de palabras en textos de contenido en móvil */
+@media screen and (max-width: 768px) {
+  #central p,
+  #central li,
+  #central h1,
+  #central h2,
+  #central h3,
+  #central h4,
+  #central h5,
+  #central h6,
+  #centralA p,
+  #centralA li,
+  #centralA h1,
+  #centralA h2,
+  #centralA h3,
+  #centralA h4,
+  #centralA h5,
+  #centralA h6,
+  #entero p,
+  #entero li,
+  #entero h1,
+  #entero h2,
+  #entero h3,
+  #entero h4,
+  #entero h5,
+  #entero h6 {
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
