@@ -3672,3 +3672,77 @@ img {
     overflow-wrap: normal !important;
   }
 }
+/* Idiomas discretos en cabecera movil para paginas modernizadas */
+@media screen and (max-width: 768px) {
+  .pagina-divulgativa #columnaI,
+  .pagina-terfezias-desert #columnaI,
+  .pagina-ficha-especie #columnaI,
+  .pagina-galeria-fotos #columnaI,
+  .pagina-indice-hipogeos #columnaI {
+    position: static !important;
+  }
+
+  .pagina-divulgativa #idiomas,
+  .pagina-terfezias-desert #idiomas,
+  .pagina-ficha-especie #idiomas,
+  .pagina-galeria-fotos #idiomas,
+  .pagina-indice-hipogeos #idiomas {
+    position: absolute !important;
+    top: 10px !important;
+    left: 8px !important;
+    right: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    z-index: 200 !important;
+  }
+
+  .pagina-divulgativa #idiomas ul,
+  .pagina-terfezias-desert #idiomas ul,
+  .pagina-ficha-especie #idiomas ul,
+  .pagina-galeria-fotos #idiomas ul,
+  .pagina-indice-hipogeos #idiomas ul {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .pagina-divulgativa #idiomas li,
+  .pagina-terfezias-desert #idiomas li,
+  .pagina-ficha-especie #idiomas li,
+  .pagina-galeria-fotos #idiomas li,
+  .pagina-indice-hipogeos #idiomas li {
+    float: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  .pagina-divulgativa #idiomas a,
+  .pagina-terfezias-desert #idiomas a,
+  .pagina-ficha-especie #idiomas a,
+  .pagina-galeria-fotos #idiomas a,
+  .pagina-indice-hipogeos #idiomas a {
+    display: inline-block !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .pagina-divulgativa #idiomas img,
+  .pagina-terfezias-desert #idiomas img,
+  .pagina-ficha-especie #idiomas img,
+  .pagina-galeria-fotos #idiomas img,
+  .pagina-indice-hipogeos #idiomas img {
+    display: inline-block !important;
+    width: 18px !important;
+    height: auto !important;
+    margin: 0 !important;
+    opacity: 0.95;
+  }
+}
