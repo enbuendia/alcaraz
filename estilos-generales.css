@@ -3795,3 +3795,7 @@ img {
     opacity: 0.95;
   }
 }
+/* Linea superior en paginas de cuentos con columna lateral */
+.pagina-divulgativa.pagina-cuentos-trufas #central > h1:first-child {
+  border-top: 1px solid rgba(93, 23, 14, 0.22);
+}
