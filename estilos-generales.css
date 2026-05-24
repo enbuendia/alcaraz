@@ -3672,6 +3672,44 @@ img {
     overflow-wrap: normal !important;
   }
 }
+/* Selector de idioma horizontal en paginas sin columna lateral */
+#entero #idiomas.idiomas-superior {
+  text-align: left;
+  margin: 0 0 28px 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+#entero #idiomas.idiomas-superior ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+#entero #idiomas.idiomas-superior li {
+  float: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#entero #idiomas.idiomas-superior a {
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  line-height: 1;
+}
+
+#entero #idiomas.idiomas-superior img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: none;
+  opacity: 0.95;
+}
+
 /* Idiomas discretos en cabecera movil para paginas modernizadas */
 @media screen and (max-width: 768px) {
   .pagina-divulgativa #columnaI,
@@ -3686,7 +3724,8 @@ img {
   .pagina-terfezias-desert #idiomas,
   .pagina-ficha-especie #idiomas,
   .pagina-galeria-fotos #idiomas,
-  .pagina-indice-hipogeos #idiomas {
+  .pagina-indice-hipogeos #idiomas,
+  .pagina-bloque-entero #entero #idiomas.idiomas-superior {
     position: absolute !important;
     top: 10px !important;
     left: 8px !important;
@@ -3701,11 +3740,17 @@ img {
     z-index: 200 !important;
   }
 
+  .pagina-bloque-entero #entero #idiomas.idiomas-superior {
+    top: 0 !important;
+    left: 4px !important;
+  }
+
   .pagina-divulgativa #idiomas ul,
   .pagina-terfezias-desert #idiomas ul,
   .pagina-ficha-especie #idiomas ul,
   .pagina-galeria-fotos #idiomas ul,
-  .pagina-indice-hipogeos #idiomas ul {
+  .pagina-indice-hipogeos #idiomas ul,
+  .pagina-bloque-entero #entero #idiomas.idiomas-superior ul {
     display: inline-flex !important;
     align-items: center !important;
     gap: 4px !important;
@@ -3717,7 +3762,8 @@ img {
   .pagina-terfezias-desert #idiomas li,
   .pagina-ficha-especie #idiomas li,
   .pagina-galeria-fotos #idiomas li,
-  .pagina-indice-hipogeos #idiomas li {
+  .pagina-indice-hipogeos #idiomas li,
+  .pagina-bloque-entero #entero #idiomas.idiomas-superior li {
     float: none !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -3728,7 +3774,8 @@ img {
   .pagina-terfezias-desert #idiomas a,
   .pagina-ficha-especie #idiomas a,
   .pagina-galeria-fotos #idiomas a,
-  .pagina-indice-hipogeos #idiomas a {
+  .pagina-indice-hipogeos #idiomas a,
+  .pagina-bloque-entero #entero #idiomas.idiomas-superior a {
     display: inline-block !important;
     padding: 0 !important;
     background: transparent !important;
@@ -3738,10 +3785,12 @@ img {
   .pagina-terfezias-desert #idiomas img,
   .pagina-ficha-especie #idiomas img,
   .pagina-galeria-fotos #idiomas img,
-  .pagina-indice-hipogeos #idiomas img {
+  .pagina-indice-hipogeos #idiomas img,
+  .pagina-bloque-entero #entero #idiomas.idiomas-superior img {
     display: inline-block !important;
     width: 18px !important;
     height: auto !important;
+    max-width: none !important;
     margin: 0 !important;
     opacity: 0.95;
   }
